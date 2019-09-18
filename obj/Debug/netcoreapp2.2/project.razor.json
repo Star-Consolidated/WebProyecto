@@ -2966,6 +2966,51 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Detalle_Pedidos\\Create.cshtml",
+      "TargetPath": "Views\\Detalle_Pedidos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Carritos\\Create.cshtml",
+      "TargetPath": "Views\\Carritos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Tiendas\\Details.cshtml",
+      "TargetPath": "Views\\Tiendas\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Tiendas\\Edit.cshtml",
+      "TargetPath": "Views\\Tiendas\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Usuarios\\Details.cshtml",
+      "TargetPath": "Views\\Usuarios\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Carritos\\Index.cshtml",
+      "TargetPath": "Views\\Carritos\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Pedidos\\Edit.cshtml",
+      "TargetPath": "Views\\Pedidos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Usuarios\\Edit.cshtml",
+      "TargetPath": "Views\\Usuarios\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Opciones\\Create.cshtml",
+      "TargetPath": "Views\\Opciones\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Caracteristicas\\Edit.cshtml",
       "TargetPath": "Views\\Caracteristicas\\Edit.cshtml",
       "FileKind": "mvc"
@@ -2976,8 +3021,43 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Usuarios\\Index.cshtml",
+      "TargetPath": "Views\\Usuarios\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Tiendas\\Delete.cshtml",
+      "TargetPath": "Views\\Tiendas\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Categorias\\Edit.cshtml",
+      "TargetPath": "Views\\Categorias\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Pedidos\\Delete.cshtml",
+      "TargetPath": "Views\\Pedidos\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Productos\\Edit.cshtml",
+      "TargetPath": "Views\\Productos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Productos\\Create.cshtml",
+      "TargetPath": "Views\\Productos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Productos\\Index.cshtml",
+      "TargetPath": "Views\\Productos\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2996,13 +3076,83 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Detalle_Pedidos\\Index.cshtml",
+      "TargetPath": "Views\\Detalle_Pedidos\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Pedidos\\Create.cshtml",
+      "TargetPath": "Views\\Pedidos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Detalle_Pedidos\\Edit.cshtml",
+      "TargetPath": "Views\\Detalle_Pedidos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Tiendas\\Create.cshtml",
+      "TargetPath": "Views\\Tiendas\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Detalle_Pedidos\\Delete.cshtml",
+      "TargetPath": "Views\\Detalle_Pedidos\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Categorias\\Create.cshtml",
+      "TargetPath": "Views\\Categorias\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Producto_Categorias\\Edit.cshtml",
+      "TargetPath": "Views\\Producto_Categorias\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Producto_Categorias\\Create.cshtml",
+      "TargetPath": "Views\\Producto_Categorias\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Opciones\\Edit.cshtml",
+      "TargetPath": "Views\\Opciones\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Opciones\\Details.cshtml",
+      "TargetPath": "Views\\Opciones\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Usuarios\\Create.cshtml",
+      "TargetPath": "Views\\Usuarios\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Opciones\\Delete.cshtml",
+      "TargetPath": "Views\\Opciones\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Tiendas\\Index.cshtml",
+      "TargetPath": "Views\\Tiendas\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Producto_Categorias\\Details.cshtml",
+      "TargetPath": "Views\\Producto_Categorias\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3016,13 +3166,88 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Detalle_Pedidos\\Details.cshtml",
+      "TargetPath": "Views\\Detalle_Pedidos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Producto_Categorias\\Index.cshtml",
+      "TargetPath": "Views\\Producto_Categorias\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Carritos\\Edit.cshtml",
+      "TargetPath": "Views\\Carritos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Pedidos\\Index.cshtml",
+      "TargetPath": "Views\\Pedidos\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Categorias\\Delete.cshtml",
+      "TargetPath": "Views\\Categorias\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Carritos\\Details.cshtml",
+      "TargetPath": "Views\\Carritos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Opciones\\Index.cshtml",
+      "TargetPath": "Views\\Opciones\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Producto_Categorias\\Delete.cshtml",
+      "TargetPath": "Views\\Producto_Categorias\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Caracteristicas\\Details.cshtml",
       "TargetPath": "Views\\Caracteristicas\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Pedidos\\Details.cshtml",
+      "TargetPath": "Views\\Pedidos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Carritos\\Delete.cshtml",
+      "TargetPath": "Views\\Carritos\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Productos\\Delete.cshtml",
+      "TargetPath": "Views\\Productos\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Categorias\\Index.cshtml",
+      "TargetPath": "Views\\Categorias\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Usuarios\\Delete.cshtml",
+      "TargetPath": "Views\\Usuarios\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Categorias\\Details.cshtml",
+      "TargetPath": "Views\\Categorias\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Productos\\Details.cshtml",
+      "TargetPath": "Views\\Productos\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],
