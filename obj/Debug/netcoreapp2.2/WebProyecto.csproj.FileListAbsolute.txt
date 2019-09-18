@@ -73,3 +73,8 @@ C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views
 C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views\Usuarios\Details.g.cshtml.cs
 C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views\Usuarios\Edit.g.cshtml.cs
 C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views\Usuarios\Index.g.cshtml.cs
+C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views\Categorias\Create.g.cshtml.cs
+C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views\Categorias\Delete.g.cshtml.cs
+C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views\Categorias\Details.g.cshtml.cs
+C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views\Categorias\Edit.g.cshtml.cs
+C:\Users\RENATO\Documents\GitHub\WebProyecto\obj\Debug\netcoreapp2.2\Razor\Views\Categorias\Index.g.cshtml.cs
