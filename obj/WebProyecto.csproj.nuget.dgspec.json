@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\WebProyecto.csproj": {}
+    "c:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\WebProyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\WebProyecto.csproj": {
+    "c:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\WebProyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\WebProyecto.csproj",
+        "projectUniqueName": "c:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\WebProyecto.csproj",
         "projectName": "WebProyecto",
-        "projectPath": "C:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\WebProyecto.csproj",
+        "projectPath": "c:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\WebProyecto.csproj",
         "packagesPath": "C:\\Users\\FABRIZIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\obj\\",
+        "outputPath": "c:\\Users\\FABRIZIO\\Desktop\\UPC\\From Zero to Hero\\WebProyecto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
