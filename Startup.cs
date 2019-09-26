@@ -35,7 +35,7 @@ namespace WebProyecto
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddDbContext<ShopContext>(options=>
-            options.UseSqlServer(Configuration.GetConnectionString("WebProyectoIdentityDbContextConnection")));
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
                 services.Configure<IdentityOptions>(options => {
                 // Password settings.
                 options.Password.RequireDigit = false;
