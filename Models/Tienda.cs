@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+
 namespace WebProyecto.Models
 {
     public class Tienda

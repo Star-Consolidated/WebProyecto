@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebProyecto.Data;
 using WebProyecto.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebProyecto.Controllers
 {
+    [Authorize]
     public class PedidosController : Controller
     {
         private readonly ShopContext _context;
