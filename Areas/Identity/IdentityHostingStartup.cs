@@ -17,7 +17,7 @@ namespace WebProyecto.Areas.Identity
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<WebProyectoIdentityDbContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("WebProyectoIdentityDbContextConnection")));
+                        context.Configuration.GetConnectionString("IdentityConnection")));
 
                 services.AddDefaultIdentity<User>()
                     .AddEntityFrameworkStores<WebProyectoIdentityDbContext>();
