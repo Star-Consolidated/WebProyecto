@@ -28,6 +28,7 @@ namespace WebProyecto.ApiControllers
             return await _context.Caracteristicas.ToListAsync();
         }
         ///<summary>
+        /// 123
         /// </summary>
         // GET: api/CaracteristicasApi/5
         [HttpGet("{id}")]
