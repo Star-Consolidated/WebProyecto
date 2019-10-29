@@ -27,7 +27,8 @@ namespace WebProyecto.ApiControllers
         {
             return await _context.Caracteristicas.ToListAsync();
         }
-
+        ///<summary>
+        /// </summary>
         // GET: api/CaracteristicasApi/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Caracteristica>> GetCaracteristica(int id)
