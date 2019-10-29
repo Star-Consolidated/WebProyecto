@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebProyecto</name>
+    </assembly>
+    <members>
+        <member name="M:WebProyecto.ApiControllers.CaracteristicasApiController.GetCaracteristicas">
+            <summary>
+            Get all Caracteristicas
+            </summary>
+            <returns>All Caracteristicas</returns>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CaracteristicasApiController.GetCaracteristica(System.Int32)">
+            <summary>
+            Get a specific Caracteristicas.
+            </summary>
+            <param name="id"></param>
+            <response code="404">The id not found in Caracteristicas</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CaracteristicasApiController.PutCaracteristica(System.Int32,WebProyecto.Models.Caracteristica)">
+            <summary>
+            Update a specific Caracteritica.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT /api/Caracteristica
+                {
+                    "CaracteristicaID": 0,
+                    "name": "string"
+                }
+            
+            </remarks>
+            <param name="id"></param>
+            <param name="campus"></param>        
+            <response code="400">the id is different to caracteristica.CaracteristicaID</response>   
+            <response code="404">The Caracteristica not found</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CaracteristicasApiController.PostCaracteristica(WebProyecto.Models.Caracteristica)">
+            <summary>
+            Creates a Caracteristica.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/Caracteristicas
+                {
+                   "name": "string"
+                }
+            
+            </remarks>
+            <param name="campus"></param>
+            <returns>A newly created Caracteristica</returns>
+            <response code="201">Returns the newly created Caracteristica</response>
+            <response code="400">If the campus is null or invalid</response>            
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CaracteristicasApiController.DeleteCaracteristica(System.Int32)">
+            <summary>
+            Deletes a specific Caracteristica.
+            </summary>
+            <param name="id"></param>   
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CarritosApiController.GetCarritos">
+            <summary>
+            Get all Carritos
+            </summary>
+            <returns>All Carritos</returns>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CarritosApiController.GetCarrito(System.Int32)">
+            <summary>
+            Get a specific Carritos.
+            </summary>
+            <param name="id"></param>
+            <response code="404">The id not found in Carritos</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CarritosApiController.PutCarrito(System.Int32,WebProyecto.Models.Carrito)">
+            <summary>
+            Update a specific Carrito.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT /api/Campuses
+                {
+                    "campusID": 0,
+                    "name": "string"
+                }
+            
+            </remarks>
+            <param name="id"></param>
+            <param name="campus"></param>        
+            <response code="400">the id is different to campus.CampusID</response>   
+            <response code="404">The campus not found</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CarritosApiController.PostCarrito(WebProyecto.Models.Carrito)">
+            <summary>
+            Creates a Carrito.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/Carritos
+                {
+                   "name": "string"
+                }
+            
+            </remarks>
+            <param name="carrito"></param>
+            <returns>A newly created Carrito</returns>
+            <response code="201">Returns the newly created carrito</response>
+            <response code="400">If the carrito is null or invalid</response>            
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CarritosApiController.DeleteCarrito(System.Int32)">
+            <summary>
+            Deletes a specific Carrito.
+            </summary>
+            <param name="id"></param>   
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CategoriasApiController.GetCategorias">
+            <summary>
+            Get all Categorias
+            </summary>
+            <returns>All Categorias</returns>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CategoriasApiController.GetCategoria(System.Int32)">
+            <summary>
+            Get a specific Categoria.
+            </summary>
+            <param name="id"></param>
+            <response code="404">The id not found in Categorias</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CategoriasApiController.PutCategoria(System.Int32,WebProyecto.Models.Categoria)">
+            <summary>
+            Update a specific Categoria.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT /api/Categorias
+                {
+                    "categoriaID": 0,
+                    "name": "string"
+                }
+            
+            </remarks>
+            <param name="id"></param>
+            <param name="categoria"></param>        
+            <response code="400">the id is different to categoria.CategoriaID</response>   
+            <response code="404">The categoria not found</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CategoriasApiController.PostCategoria(WebProyecto.Models.Categoria)">
+            <summary>
+            Creates a Categoria.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/Categorias
+                {
+                   "name": "string"
+                }
+            
+            </remarks>
+            <param name="categoria"></param>
+            <returns>A newly created Categoria</returns>
+            <response code="201">Returns the newly created categoria</response>
+            <response code="400">If the categoria is null or invalid</response>            
+        </member>
+        <member name="M:WebProyecto.ApiControllers.CategoriasApiController.DeleteCategoria(System.Int32)">
+            <summary>
+            Deletes a specific Categoria.
+            </summary>
+            <param name="id"></param>   
+        </member>
+        <member name="M:WebProyecto.ApiControllers.OpcionesApiController.GetOpciones">
+            <summary>
+            Get all Pedidos
+            </summary>
+            <returns>All Pedidos</returns>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.OpcionesApiController.GetOpcion(System.Int32)">
+            <summary>
+            Get a specific Pedido.
+            </summary>
+            <param name="id"></param>
+            <response code="404">The id not found in Pedidos</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WebProyecto.ApiControllers.OpcionesApiController.PutOpcion(System.Int32,WebProyecto.Models.Opcion)" -->
+        <!-- Badly formed XML comment ignored for member "M:WebProyecto.ApiControllers.OpcionesApiController.PostOpcion(WebProyecto.Models.Opcion)" -->
+        <member name="M:WebProyecto.ApiControllers.OpcionesApiController.DeleteOpcion(System.Int32)">
+            <summary>
+            Deletes a specific Pedido.
+            </summary>
+            <param name="id"></param>   
+        </member>
+        <member name="M:WebProyecto.ApiControllers.PedidosApiController.GetPedidos">
+            <summary>
+            Get all Opcioness
+            </summary>
+            <returns>All Opcioness</returns>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.PedidosApiController.GetPedido(System.Int32)">
+            <summary>
+            Get a specific Opciones.
+            </summary>
+            <param name="id"></param>
+            <response code="404">The id not found in Opcioness</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.PedidosApiController.PutPedido(System.Int32,WebProyecto.Models.Pedido)">
+            <summary>
+            Update a specific Opciones.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT /api/Opcioness
+                {
+                    "opcionesID": 0,
+                    "name": "string"
+                }
+            
+            </remarks>
+            <param name="id"></param>
+            <param name="opciones"></param>        
+            <response code="400">the id is different to opciones.OpcionesID</response>   
+            <response code="404">The opciones not found</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.PedidosApiController.PostPedido(WebProyecto.Models.Pedido)">
+            <summary>
+            Creates a Opciones.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/Opcioness
+                {
+                   "name": "string"
+                }
+            
+            </remarks>
+            <param name="opciones"></param>
+            <returns>A newly created Opciones</returns>
+            <response code="201">Returns the newly created opciones</response>
+            <response code="400">If the opciones is null or invalid</response>            
+        </member>
+        <member name="M:WebProyecto.ApiControllers.PedidosApiController.DeletePedido(System.Int32)">
+            <summary>
+            Deletes a specific Pedidos.
+            </summary>
+            <param name="id"></param>   
+        </member>
+        <member name="M:WebProyecto.ApiControllers.ProductosApiController.GetProductos">
+            <summary>
+            Get all Productos
+            </summary>
+            <returns>All Productos</returns>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.ProductosApiController.GetProducto(System.Int32)">
+            <summary>
+            Get a specific Producto.
+            </summary>
+            <param name="id"></param>
+            <response code="404">The id not found in Productos</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.ProductosApiController.PutProducto(System.Int32,WebProyecto.Models.Producto)">
+            <summary>
+            Update a specific Producto.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT /api/Productos
+                {
+                    "productoID": 0,
+                    "name": "string"
+                }
+            
+            </remarks>
+            <param name="id"></param>
+            <param name="producto"></param>        
+            <response code="400">the id is different to producto.ProductoID</response>   
+            <response code="404">The producto not found</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.ProductosApiController.PostProducto(WebProyecto.Models.Producto)">
+            <summary>
+            Creates a Producto.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/Productos
+                {
+                   "name": "string"
+                }
+            
+            </remarks>
+            <param name="producto"></param>
+            <returns>A newly created Producto</returns>
+            <response code="201">Returns the newly created producto</response>
+            <response code="400">If the producto is null or invalid</response>            
+        </member>
+        <member name="M:WebProyecto.ApiControllers.ProductosApiController.DeleteProducto(System.Int32)">
+            <summary>
+            Deletes a specific Producto.
+            </summary>
+            <param name="id"></param>   
+        </member>
+        <member name="M:WebProyecto.ApiControllers.TiendasApiController.GetTiendas">
+            <summary>
+            Get all Tiendas
+            </summary>
+            <returns>All Tiendas</returns>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.TiendasApiController.GetTienda(System.Int32)">
+            <summary>
+            Get a specific Tienda.
+            </summary>
+            <param name="id"></param>
+            <response code="404">The id not found in Tiendas</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.TiendasApiController.PutTienda(System.Int32,WebProyecto.Models.Tienda)">
+            <summary>
+            Update a specific Tienda.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT /api/Tiendas
+                {
+                    "tiendaID": 0,
+                    "name": "string"
+                }
+            
+            </remarks>
+            <param name="id"></param>
+            <param name="tienda"></param>        
+            <response code="400">the id is different to tienda.TiendaID</response>   
+            <response code="404">The tienda not found</response>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.TiendasApiController.PostTienda(WebProyecto.Models.Tienda)">
+            <summary>
+            Creates a Tienda.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /api/Tiendas
+                {
+                   "name": "string"
+                }
+            
+            </remarks>
+            <param name="tienda"></param>
+            <returns>A newly created Tienda</returns>
+            <response code="201">Returns the newly created tienda</response>
+            <response code="400">If the tienda is null or invalid</response>            
+        </member>
+        <member name="M:WebProyecto.ApiControllers.TiendasApiController.DeleteTienda(System.Int32)">
+            <summary>
+            Deletes a specific Tienda.
+            </summary>
+            <param name="id"></param>   
+        </member>
+        <member name="M:WebProyecto.ApiControllers.UsuariosApiController.GetUsuarios">
+            <summary>
+            Get all Usuarios
+            </summary>
+            <returns>All Usuarios</returns>
+        </member>
+        <member name="M:WebProyecto.ApiControllers.UsuariosApiController.GetUsuario(System.Int32)">
+            <summary>
+            Get a specific Usuario.
+            </summary>
+            <param name="id"></param>
+            <response code="404">The id not found in Usuarios</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WebProyecto.ApiControllers.UsuariosApiController.PutUsuario(System.Int32,WebProyecto.Models.Usuario)" -->
+        <!-- Badly formed XML comment ignored for member "M:WebProyecto.ApiControllers.UsuariosApiController.PostUsuario(WebProyecto.Models.Usuario)" -->
+        <member name="M:WebProyecto.ApiControllers.UsuariosApiController.DeleteUsuario(System.Int32)">
+            <summary>
+            Deletes a specific Usuario.
+            </summary>
+            <param name="id"></param>   
+        </member>
+    </members>
+</doc>
