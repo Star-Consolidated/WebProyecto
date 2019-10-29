@@ -89,3 +89,5 @@ C:\Users\FABRIZIO\Desktop\UPC\From Zero to Hero\WebProyecto\obj\MCD\Debug\netcor
 C:\Users\FABRIZIO\Desktop\UPC\From Zero to Hero\WebProyecto\obj\MCD\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
 C:\Users\FABRIZIO\Desktop\UPC\From Zero to Hero\WebProyecto\obj\MCD\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
 C:\Users\FABRIZIO\Desktop\UPC\From Zero to Hero\WebProyecto\obj\MCD\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\FABRIZIO\Desktop\UPC\From Zero to Hero\WebProyecto\bin\MCD\Debug\netcoreapp2.2\WebProyecto.xml
+C:\Users\FABRIZIO\Desktop\UPC\From Zero to Hero\WebProyecto\obj\MCD\Debug\netcoreapp2.2\WebProyecto.xml
