@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Opciones")]
     [ApiController]
     public class OpcionesApiController : ControllerBase
@@ -22,14 +23,29 @@ namespace WebProyecto.ApiControllers
         }
 
         // GET: api/OpcionesApi
+        /// <summary>
+        /// Get all Opcions
+        /// </summary>
+        /// <returns>All Opcions</returns>
         [HttpGet]
+        [ProducesResponseType(200)]
+
         public async Task<ActionResult<IEnumerable<Opcion>>> GetOpciones()
         {
             return await _context.Opciones.ToListAsync();
         }
 
         // GET: api/OpcionesApi/5
+        /// <summary>
+        /// Get a specific Opcion.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <response code="404">The id not found in Opcions</response>
         [HttpGet("{id}")]
+        [ProducesResponseType(404)]
+
+
+
         public async Task<ActionResult<Opcion>> GetOpcion(int id)
         {
             var opcion = await _context.Opciones.FindAsync(id);
@@ -43,7 +59,29 @@ namespace WebProyecto.ApiControllers
         }
 
         // PUT: api/OpcionesApi/5
+        /// <summary>
+        /// Update a specific Opcion.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     PUT /api/Opcions
+        ///     {
+        ///         "opcionID": 0,
+        ///         "name": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="id"></param>
+        /// <param name="opcion"></param>        
+        /// <response code="400">the id is different to opcion.OpcionID</response>   
+        /// <response code="404">The opcion not found</response>
         [HttpPut("{id}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+
+
+
         public async Task<IActionResult> PutOpcion(int id, Opcion opcion)
         {
             if (id != opcion.ID)
@@ -73,7 +111,27 @@ namespace WebProyecto.ApiControllers
         }
 
         // POST: api/OpcionesApi
+        /// <summary>
+        /// Creates a Opcion.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     POST /api/Opcions
+        ///     {
+        ///        "name": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="opcion"></param>
+        /// <returns>A newly created Opcion</returns>
+        /// <response code="201">Returns the newly created opcion</response>
+        /// <response code="400">If the opcion is null or invalid</response>            
         [HttpPost]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+
+
         public async Task<ActionResult<Opcion>> PostOpcion(Opcion opcion)
         {
             _context.Opciones.Add(opcion);
@@ -83,7 +141,13 @@ namespace WebProyecto.ApiControllers
         }
 
         // DELETE: api/OpcionesApi/5
+        /// <summary>
+        /// Deletes a specific Opcion.
+        /// </summary>
+        /// <param name="id"></param>   
         [HttpDelete("{id}")]
+
+
         public async Task<ActionResult<Opcion>> DeleteOpcion(int id)
         {
             var opcion = await _context.Opciones.FindAsync(id);

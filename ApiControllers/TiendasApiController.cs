@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Tiendas")]
     [ApiController]
     public class TiendasApiController : ControllerBase
@@ -22,14 +23,27 @@ namespace WebProyecto.ApiControllers
         }
 
         // GET: api/TiendasApi
+        /// <summary>
+        /// Get all Tiendas
+        /// </summary>
+        /// <returns>All Tiendas</returns>
         [HttpGet]
+        [ProducesResponseType(200)]
+
         public async Task<ActionResult<IEnumerable<Tienda>>> GetTiendas()
         {
             return await _context.Tiendas.ToListAsync();
         }
 
         // GET: api/TiendasApi/5
+        /// <summary>
+        /// Get a specific Tienda.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <response code="404">The id not found in Tiendas</response>
         [HttpGet("{id}")]
+        [ProducesResponseType(404)]
+
         public async Task<ActionResult<Tienda>> GetTienda(int id)
         {
             var tienda = await _context.Tiendas.FindAsync(id);
@@ -43,7 +57,27 @@ namespace WebProyecto.ApiControllers
         }
 
         // PUT: api/TiendasApi/5
+        /// <summary>
+        /// Update a specific Tienda.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     PUT /api/Tiendas
+        ///     {
+        ///         "tiendaID": 0,
+        ///         "name": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="id"></param>
+        /// <param name="tienda"></param>        
+        /// <response code="400">the id is different to tienda.TiendaID</response>   
+        /// <response code="404">The tienda not found</response>
         [HttpPut("{id}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+
         public async Task<IActionResult> PutTienda(int id, Tienda tienda)
         {
             if (id != tienda.ID)
@@ -73,7 +107,26 @@ namespace WebProyecto.ApiControllers
         }
 
         // POST: api/TiendasApi
+        /// <summary>
+        /// Creates a Tienda.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     POST /api/Tiendas
+        ///     {
+        ///        "name": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="tienda"></param>
+        /// <returns>A newly created Tienda</returns>
+        /// <response code="201">Returns the newly created tienda</response>
+        /// <response code="400">If the tienda is null or invalid</response>            
         [HttpPost]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+
         public async Task<ActionResult<Tienda>> PostTienda(Tienda tienda)
         {
             _context.Tiendas.Add(tienda);
@@ -83,7 +136,13 @@ namespace WebProyecto.ApiControllers
         }
 
         // DELETE: api/TiendasApi/5
+        /// <summary>
+        /// Deletes a specific Tienda.
+        /// </summary>
+        /// <param name="id"></param>   
         [HttpDelete("{id}")]
+
+
         public async Task<ActionResult<Tienda>> DeleteTienda(int id)
         {
             var tienda = await _context.Tiendas.FindAsync(id);

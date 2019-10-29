@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Productos")]
     [ApiController]
     public class ProductosApiController : ControllerBase
@@ -21,15 +22,30 @@ namespace WebProyecto.ApiControllers
             _context = context;
         }
 
-        // GET: api/ProductosApi
+        /// <summary>
+        /// Get all Productos
+        /// </summary>
+        /// <returns>All Productos</returns>
         [HttpGet]
+        [ProducesResponseType(200)]
+
+        [HttpGet]
+        [ProducesResponseType(200)]
+
         public async Task<ActionResult<IEnumerable<Producto>>> GetProductos()
         {
             return await _context.Productos.ToListAsync();
         }
 
         // GET: api/ProductosApi/5
+        /// <summary>
+        /// Get a specific Producto.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <response code="404">The id not found in Productos</response>
         [HttpGet("{id}")]
+        [ProducesResponseType(404)]
+
         public async Task<ActionResult<Producto>> GetProducto(int id)
         {
             var producto = await _context.Productos.FindAsync(id);
@@ -43,7 +59,27 @@ namespace WebProyecto.ApiControllers
         }
 
         // PUT: api/ProductosApi/5
+        /// <summary>
+        /// Update a specific Producto.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     PUT /api/Productos
+        ///     {
+        ///         "productoID": 0,
+        ///         "name": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="id"></param>
+        /// <param name="producto"></param>        
+        /// <response code="400">the id is different to producto.ProductoID</response>   
+        /// <response code="404">The producto not found</response>
         [HttpPut("{id}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+
         public async Task<IActionResult> PutProducto(int id, Producto producto)
         {
             if (id != producto.ID)
@@ -73,7 +109,26 @@ namespace WebProyecto.ApiControllers
         }
 
         // POST: api/ProductosApi
+        /// <summary>
+        /// Creates a Producto.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     POST /api/Productos
+        ///     {
+        ///        "name": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="producto"></param>
+        /// <returns>A newly created Producto</returns>
+        /// <response code="201">Returns the newly created producto</response>
+        /// <response code="400">If the producto is null or invalid</response>            
         [HttpPost]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+
         public async Task<ActionResult<Producto>> PostProducto(Producto producto)
         {
             _context.Productos.Add(producto);
@@ -83,7 +138,12 @@ namespace WebProyecto.ApiControllers
         }
 
         // DELETE: api/ProductosApi/5
+        /// <summary>
+        /// Deletes a specific Producto.
+        /// </summary>
+        /// <param name="id"></param>   
         [HttpDelete("{id}")]
+
         public async Task<ActionResult<Producto>> DeleteProducto(int id)
         {
             var producto = await _context.Productos.FindAsync(id);

@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Categorias")]
     [ApiController]
     public class CategoriasApiController : ControllerBase
@@ -22,14 +23,27 @@ namespace WebProyecto.ApiControllers
         }
 
         // GET: api/CategoriasApi
+        /// <summary>
+        /// Get all Categorias
+        /// </summary>
+        /// <returns>All Categorias</returns>
         [HttpGet]
+        [ProducesResponseType(200)]
+
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategorias()
         {
             return await _context.Categorias.ToListAsync();
         }
 
         // GET: api/CategoriasApi/5
+        /// <summary>
+        /// Get a specific Categoria.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <response code="404">The id not found in Categorias</response>
         [HttpGet("{id}")]
+        [ProducesResponseType(404)]
+
         public async Task<ActionResult<Categoria>> GetCategoria(int id)
         {
             var categoria = await _context.Categorias.FindAsync(id);
@@ -43,7 +57,27 @@ namespace WebProyecto.ApiControllers
         }
 
         // PUT: api/CategoriasApi/5
+        /// <summary>
+        /// Update a specific Categoria.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     PUT /api/Categorias
+        ///     {
+        ///         "categoriaID": 0,
+        ///         "name": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="id"></param>
+        /// <param name="categoria"></param>        
+        /// <response code="400">the id is different to categoria.CategoriaID</response>   
+        /// <response code="404">The categoria not found</response>
         [HttpPut("{id}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+
         public async Task<IActionResult> PutCategoria(int id, Categoria categoria)
         {
             if (id != categoria.ID)
@@ -73,7 +107,26 @@ namespace WebProyecto.ApiControllers
         }
 
         // POST: api/CategoriasApi
+        /// <summary>
+        /// Creates a Categoria.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     POST /api/Categorias
+        ///     {
+        ///        "name": "string"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="categoria"></param>
+        /// <returns>A newly created Categoria</returns>
+        /// <response code="201">Returns the newly created categoria</response>
+        /// <response code="400">If the categoria is null or invalid</response>            
         [HttpPost]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+
         public async Task<ActionResult<Categoria>> PostCategoria(Categoria categoria)
         {
             _context.Categorias.Add(categoria);
@@ -83,7 +136,12 @@ namespace WebProyecto.ApiControllers
         }
 
         // DELETE: api/CategoriasApi/5
+        /// <summary>
+        /// Deletes a specific Categoria.
+        /// </summary>
+        /// <param name="id"></param>   
         [HttpDelete("{id}")]
+
         public async Task<ActionResult<Categoria>> DeleteCategoria(int id)
         {
             var categoria = await _context.Categorias.FindAsync(id);
