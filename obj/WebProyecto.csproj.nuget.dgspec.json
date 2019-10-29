@@ -77,6 +77,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Utils": {
               "target": "Package",
               "version": "[2.2.3, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[13.1.3, )"
             }
           },
           "imports": [

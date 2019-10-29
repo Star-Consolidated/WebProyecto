@@ -60,7 +60,27 @@ namespace WebProyecto
                     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
                     options.SlidingExpiration = true;
                     });
-
+                services.AddSwaggerDocument(config =>
+                {
+                    config.PostProcess = document =>
+                    {
+                        document.Info.Version = "v1";
+                        document.Info.Title = "PetShop API";
+                        document.Info.Description = "A simple ASP.NET Core web API";
+                        document.Info.TermsOfService = "None";
+                        document.Info.Contact = new NSwag.OpenApiContact
+                        {
+                            Name = "Dee Airheart",
+                            Email = "bipolaridee@gmail.com",
+                            Url = "https://github.com/SteamPoweredDee/"
+                        };
+                        document.Info.License = new NSwag.OpenApiLicense
+                        {
+                            Name = "Apache 2.0",
+                            Url = "https://www.apache.org/licenses/LICENSE-2.0"
+                        };
+                    };
+                });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -82,6 +102,9 @@ namespace WebProyecto
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseAuthentication();
+            
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseMvc(routes =>
             {
