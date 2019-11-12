@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Categorias")]
     [ApiController]
     public class CategoriasApiController : ControllerBase
@@ -53,7 +54,8 @@ namespace WebProyecto.ApiControllers
 
             return categoria;
         }
-
+        
+        
         // PUT: api/CategoriasApi/5
         /// <summary>
         /// Update a specific Categoria.

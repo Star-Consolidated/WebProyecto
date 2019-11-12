@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Caracteristicas")]
     [ApiController]
     public class CaracteristicasApiController : ControllerBase
@@ -52,6 +53,29 @@ namespace WebProyecto.ApiControllers
             }
 
             return caracteristica;
+        }
+
+        // GET: api/CaracteristicasApi/5/Productos
+        /// <summary>
+        /// Get a specific Caracteristic Productos.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <response code="404">The id not found in Caracteristicas</response>
+        /// <response code="200">OK</response>
+        [HttpGet("{id}/Productos")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
+        public async Task<ActionResult<IEnumerable<Producto>>> GetProductosCaracteristica(int id)
+        {
+            var caracteristica = await _context.Caracteristicas.Include(x=>x.Productos).FirstAsync(x=>x.ID.Equals(id));
+  
+
+            if (caracteristica == null)
+            {
+                return NotFound();
+            }
+
+            return caracteristica.Productos.ToList();
         }
 
         // PUT: api/CaracteristicasApi/5

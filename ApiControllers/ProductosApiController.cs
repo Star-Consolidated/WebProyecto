@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Productos")]
     [ApiController]
     public class ProductosApiController : ControllerBase
@@ -26,7 +27,7 @@ namespace WebProyecto.ApiControllers
         /// Get all Productos
         /// </summary>
         /// <returns>All Productos</returns>
-        /// <response code="200">OK</repsonse>
+        /// <response code="200">OK</response>
         [HttpGet]
         [ProducesResponseType(200)]
  

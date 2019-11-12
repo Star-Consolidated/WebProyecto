@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Tiendas")]
     [ApiController]
     public class TiendasApiController : ControllerBase
@@ -52,6 +53,29 @@ namespace WebProyecto.ApiControllers
             }
 
             return tienda;
+        }
+
+        // GET: api/TiendasApi/5/Productos
+        /// <summary>
+        /// Get los productos de una tienda especifica.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <response code="404">The id not found in tiendas</response>
+        /// <response code="200">OK</response>
+        [HttpGet("{id}/Tiendas")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
+        public async Task<ActionResult<IEnumerable<Producto>>> GetProductosTienda(int id)
+        {
+            var tienda = await _context.Tiendas.Include(x=>x.Productos).FirstAsync(x=>x.ID.Equals(id));
+  
+        
+            if (tienda == null)
+            {
+                return NotFound();
+            }
+
+            return tienda.Productos.ToList();
         }
 
         // PUT: api/TiendasApi/5

@@ -10,6 +10,7 @@ using WebProyecto.Models;
 
 namespace WebProyecto.ApiControllers
 {
+    [Produces("application/json")]
     [Route("api/Usuarios")]
     [ApiController]
     public class UsuariosApiController : ControllerBase
